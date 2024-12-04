@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"  # Replace this with your desired region
 }
 
-resource "aws_s3_bucket" "middleware-s3-dev-bucket" {
+resource "aws_s3_bucket_acl" "middleware-s3-dev-bucket" {
   bucket = "middleware-s3-dev-bucket"
   acl    = "private"
 }
